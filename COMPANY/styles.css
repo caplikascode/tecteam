@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./images/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 52px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0%;
+    background: #FF4500;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%
+}
+
+.content{
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.content h1{
+    font-size: 4rem;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #FF4500;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.content span{
+ transition: 0.5s;
+ z-index: -1; 
+ position: absolute;;
+ left: 0;
+ bottom: 0;
+ background: #FF4500;
+ height: 100%;
+ width: 0%
+} 
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+
+
+/*SERVICES*/
+
+
+
+.background1{
+    background-color: #4B4A4A;
+    background-size: cover;
+    background-position: center;
+}
+
+.servicesheader {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 100px;
+    padding-left: 480px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: 1px solid grey;
+    height: 200px;
+    width: 125px;
+    margin: 20px 15px;
+    padding: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: #3F3F3F;
+}
+
+.card h1{
+    color: #fff;
+    padding-bottom: 40px;
+    font-size: 1.2rem;
+}
+
+.card p{
+    color: grey;
+}
+
+.card img{
+    max-width: 40%;
+    padding-bottom: 15px;
+}
+
+.card:hover{
+    background-color: grey;
+    color: white;
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+
+
+/*TEAM*/
+
+/*.background2{  
+    background-color: #3F3F3F;
+    width: 100%;
+    height: 2000px;
+}*/
+
+/*.teamheader{ 
+    display: flex;
+    justify-content: center;
+    padding: 100px 50px;
+    color: white;
+} */
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F3F3F;
+    flex-wrap: wrap;
+}
+
+.team-card{
+    margin: 150px 30px;
+    text-align: center;
+    padding: 0px;
+    width: 300px;
+    background-color: #4B4A4A;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.team-card img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+ padding: 15px 0 7px
+}
+
+.card-info span{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card-info h6{
+    color: white;
+    margin-bottom: 7px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.card-info a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 12px 5px 0;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 30px;
+    transition: all 0.5s;
+}
+
+.card-info a:hover:nth-child(1){
+    color: white;
+    background-color: #1877f2;
+}
+
+.card-info a:hover:nth-child(2){
+    color: white;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.card-info a:hover:nth-child(3){
+    color: white;
+    background-color: #1877f2;
+}
